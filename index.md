@@ -11,7 +11,7 @@ Hello world! This is my first file for cse15l lab reports
 ```
 for(int i = 0; i < listOfAllPeopleOnEarth.length; i++)
 {
-System.out.print("hello, " + listOfAllPeopleOnEarth[i]);
+System.out.println("hello, " + listOfAllPeopleOnEarth[i]);
 }
 ```
 
