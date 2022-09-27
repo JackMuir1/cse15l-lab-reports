@@ -1,5 +1,3 @@
-Hello world! This is my first file for cse15l lab reports
-
 # Welcome to my first site
 *My name is Jack Muir*, or **Jack Muir** in bold. 
 
