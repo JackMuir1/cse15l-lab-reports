@@ -6,14 +6,14 @@ Hello world! This is my first file for cse15l lab reports
 ## Here I will be experimenting with Markdown using the [markdown cheat sheet](https://commonmark.org/help/)
 
 * It can be used to format text
-* You can even show code 'System.out.print("hello, world!")'
+* You can even show code `System.out.print("hello, world!")`
 * If you have a lot of code, you can create a code block
-'''
+```
 for(int i = 0; i < listOfAllPeopleOnEarth.length; i++)
 {
 System.out.print("hello, " + listOfAllPeopleOnEarth[i]);
 }
-'''
+```
 
 ---
 
