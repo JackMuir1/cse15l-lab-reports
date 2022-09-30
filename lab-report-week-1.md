@@ -37,7 +37,7 @@ Here's what the terminal looks like with some commands:
 
 ## Moving Files with scp
 A benefit of having a remote computer is that you can transfer files from your home computer!
-The command `scp <file> cs15lfa22__@ieng6.ucsd.edu` will send your file to the remote computer after entering your password.
+The command `scp <file> cs15lfa22__@ieng6.ucsd.edu:~/` will send your file to the remote computer after entering your password.
 
 In this example, I created a java file, WhereAmI.java, which displays the system of the computer the file is run on. When run remotely, you get the following text:
   
@@ -51,10 +51,18 @@ Here is what the sending process of the public key looks like:
 ![Sending Key](https://user-images.githubusercontent.com/70072541/193162565-009608c0-35ee-47d8-991f-0b93a67f5d2d.png)
 
 ## Optimizing Remote Running
-Now that you do not have to enter your password every time you want to upload or overrite a file, you can stremline the process of file transfer. An easy way to optimize is to have multiple terminals open, one on the client and one remote. Then you can navigate both computers without logging in and out.
+Now that you do not have to enter your password every time you want to upload or overrite a file, you can stremline the process of file transfer. 
+All you need to do is change your file, save, then type `scp <file> cs15lfa22__@ieng6.ucsd.edu:~/`. No password needed!
+
+Here are some tips to optimize your terminal navigation:
+* Have multiple terminals open, one on the client and one remote. Then you can navigate both computers without logging in and out.
+* You can autocomplete using tab. The terminal can find the next files in your directory
+* You can use the up arrow to go to previous commands. If you keep updating the same file, you only need to press one key and repeat the same command.
   
   Note: When you update a file using `scp` , it automatically overrites files of the same name in the directory you are sending it to.
   
-  Here's an updated version of the WhereAmi script with an extra line printed, uploaded to the remoate computer:
+  Here you can see I displayed my original java file, changed the file, displayed the changes, and uploaded it to the remoate computer, in just 3 commands!
   
-![Updated whereami](https://user-images.githubusercontent.com/70072541/193162592-f45c3a2b-340d-4f02-98ce-9a47b8bf3aaf.png)
+  ![ChangedJava](https://user-images.githubusercontent.com/70072541/193164608-338619c2-76db-4e27-9d7d-0075a0a106f1.png)
+
+And that's all! When you are done, simply type the `exit` command to log out of the remote computer and exit the terminal
