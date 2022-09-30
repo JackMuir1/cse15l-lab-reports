@@ -12,7 +12,7 @@ Once installed, open the program. It should look like the following (Without the
 Next, you'll need to connect to the remote computers UCSD has. By connecting to remote computers, you can has access to more powerful processing, more storage, and even a different operating system. 
 
 You'll need a personal login and passwords to the computer, which you can find on [this link](https://sdacs.ucsd.edu/~icc/index.php)
-From the site, you will get the two letters needed in theblanks for the log in address ` cs15lfa22__@ieng6.ucsd.edu `
+From the site, you will get the two letters needed in theblanks for the log in address `cs15lfa22__@ieng6.ucsd.edu`
 
 You be using the terminal do communicate with the remote computer, so open a terminal in visual studio by going to Terminal -> New Terminal. Then type in the following command:
 `ssh cs15lfa22__@ieng6.ucsd.edu`
