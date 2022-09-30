@@ -5,6 +5,8 @@
 You can download VSCode at [this link here](https://code.visualstudio.com/)
 Once you install visual studio, open the program. It should look like the following:
 
+![VSCODe](https://user-images.githubusercontent.com/70072541/193163789-5cbcc03f-fe1d-40e9-8e77-20d6f78be52d.png)
+
 
 ## Remotely Connecting
 Next, you'll need to connect to the remote computers ucsd has. By connecting to remote computers, you can has access to more powerful processing, more storage, and even a different operating system. 
@@ -17,6 +19,7 @@ You be using the terminal do communicate with the remote computer, so open a ter
 Then enter your password
 
 This will connect you to the remote server. You will get a display like the following:
+
 ![LoginScreen](https://user-images.githubusercontent.com/70072541/193162528-4090aa3c-eb2a-4d82-b5e8-03ebee012659.png)
 
 
@@ -29,6 +32,7 @@ Copy the path: cp
 Display contents of file: cat
 '''
 Here's what the terminal looks like with some commands:
+
 ![Command Example](https://user-images.githubusercontent.com/70072541/193162503-adf5873e-6c62-4905-99c8-11d8650a20fa.png)
 
 ## Moving Files with scp
@@ -36,12 +40,14 @@ A benefit of having a remote computer is that you can transfer files from your h
 The command 'scp <file> cs15lfa22__@ieng6.ucsd.edu' will send your file to the remote computer after entering your password.
 
 In this example, I created a java file, WhereAmI.java, which displays the system of the computer the file is run on. When run remotely, you get the following text:
+  
 ![running java ](https://user-images.githubusercontent.com/70072541/193162584-25d5004a-6f57-4d49-bb39-759f4d9ba32a.png)
   
 ## Setting an SSH Key
 If you do not want to enter your password after every file change, you can create a ssh key by using 'ssh-keygen' . This creates two files, your public and private key. You can send the private key to the remote server using 'scp' and have it saved so that your login will be saved.
   
 Here is what the sending process of the public key looks like:
+  
 ![Sending Key](https://user-images.githubusercontent.com/70072541/193162565-009608c0-35ee-47d8-991f-0b93a67f5d2d.png)
 
 ## Optimizing Remote Running
