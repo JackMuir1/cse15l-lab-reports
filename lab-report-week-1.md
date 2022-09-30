@@ -3,13 +3,13 @@
 ## Installing VSCode
 
 You can download VSCode at [this link here](https://code.visualstudio.com/)
-Once installed, open the program. It should look like the following:
+Once installed, open the program. It should look like the following (Without the java files on the left):
 
 ![VSCODe](https://user-images.githubusercontent.com/70072541/193163789-5cbcc03f-fe1d-40e9-8e77-20d6f78be52d.png)
 
 
 ## Remotely Connecting
-Next, you'll need to connect to the remote computers ucsd has. By connecting to remote computers, you can has access to more powerful processing, more storage, and even a different operating system. 
+Next, you'll need to connect to the remote computers UCSD has. By connecting to remote computers, you can has access to more powerful processing, more storage, and even a different operating system. 
 
 You'll need a personal login and passwords to the computer, which you can find on [this link](https://sdacs.ucsd.edu/~icc/index.php)
 From the site, you will get the two letters needed in theblanks for the log in address ` cs15lfa22__@ieng6.ucsd.edu `
@@ -37,12 +37,18 @@ Here's what the terminal looks like with some commands:
 
 ## Moving Files with scp
 A benefit of having a remote computer is that you can transfer files from your home computer!
-The command `scp <file> cs15lfa22__@ieng6.ucsd.edu:~/` will send your file to the remote computer after entering your password.
+The command `scp <file> cs15lfa22__@ieng6.ucsd.edu:~/` will send your file to the remote computer's home directory after entering your password.
 
-In this example, I created a java file, WhereAmI.java, which displays the system of the computer the file is run on. When run remotely, you get the following text:
+In this example, I created a java file, WhereAmI.java, which displays the system of the computer the file is run on. Here you can see the display of the file, and me running it on my computer:
   
 ![running java ](https://user-images.githubusercontent.com/70072541/193162584-25d5004a-6f57-4d49-bb39-759f4d9ba32a.png)
   
+Here I am sending and running it remotely:
+
+![RemoteJava](https://user-images.githubusercontent.com/70072541/193165921-6cac39bb-122e-41cf-b2fe-7135ba010bd3.png)
+
+Notice how when I run the java function, I had to omit the .java file ending. This is because `javac` compile the java file into a class file, and `java` runs the compiled file
+
 ## Setting an SSH Key
 If you do not want to enter your password after every file change, you can create a ssh key by using `ssh-keygen` . This creates two files, your public and private key. You can send the private key to the remote server using 'scp' and have it saved so that your login will be saved.
   
@@ -61,7 +67,7 @@ Here are some tips to optimize your terminal navigation:
   
   Note: When you update a file using `scp` , it automatically overrites files of the same name in the directory you are sending it to.
   
-  Here you can see I displayed my original java file, changed the file, displayed the changes, and uploaded it to the remoate computer, in just 3 commands!
+  Here you can see I displayed my original java file, changed the file, displayed the changes, and uploaded it to the remote computer, in just 3 commands!
   
   ![ChangedJava](https://user-images.githubusercontent.com/70072541/193164608-338619c2-76db-4e27-9d7d-0075a0a106f1.png)
 
