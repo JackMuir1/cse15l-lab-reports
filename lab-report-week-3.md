@@ -81,8 +81,8 @@ String[] parameters = url.getQuery().split("=");
 The program splits the queries between = and puts them into a list, then adds all the items from the list into the strings dataset. It also concatinates them into a string to be outputted by the program.
 
 This means that you can add as many strings you want to the data set in one address line. Below is an example of adding one string and three strings as queries
-![adding jack](![Lab2SSJack](https://user-images.githubusercontent.com/70072541/195721331-d8546b09-b49d-437e-a7d1-98a031cdd646.png)
-![adding_2names](!![Lab2SS3Names](https://user-images.githubusercontent.com/70072541/195721403-a2ae7048-e419-4a35-927c-078f05ae6137.png)
+![adding jack](https://user-images.githubusercontent.com/70072541/195721331-d8546b09-b49d-437e-a7d1-98a031cdd646.png)
+![adding_2names](https://user-images.githubusercontent.com/70072541/195721403-a2ae7048-e419-4a35-927c-078f05ae6137.png)
 
 Now that there are strings in the data set, you can search through them. When /search is added to the address, the following code is run:
 ```
