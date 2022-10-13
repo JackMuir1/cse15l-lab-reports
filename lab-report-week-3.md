@@ -147,12 +147,30 @@ Connection:
 The first number was 0 due to the fact that the the new array was being reversed and inserted into the input array. The new array was a list of 0s so reversing them changed nothing, and the input array was changed to all 0s. By rearranging the variables so the input was reversed and the list of 0s were replaced, the problem was solved
 
 
-Second Bug- Lists
+Second Bug- FileExample.getFiles
 
 Failure Inducing Input: 
+```
+@Test 
+    public void TestFiles() throws IOException
+    {
+        List<File> expected = new ArrayList<File>();
+        expected.add(new File("some-files/more-files/b.txt"));
+        expected.add(new File("some-files/more-files/c.java"));
+        
+
+        assertEquals(expected, FileExample.getFiles(new File("some-files/more-files")));
+    }
+```
 
 Symptom:
 
+![FilesErrorOutput](https://user-images.githubusercontent.com/70072541/195730081-a26d77cc-def1-42fd-944a-b0a279161860.png)
+
 Bug:
 
-Connection:
+![FilesBugFixed](https://user-images.githubusercontent.com/70072541/195730098-f1b4b06f-85e1-4571-8037-b7c336973134.png)
+
+
+Connection: 
+The original file was included in the list of files and subfiles, when the comment describe that the code should only return the original file if there were no subfiles. This can been seen in the outputted lists in the test result. This was changed by removing the start file if the if statement is passes, so the start file would still be included if there were no other files.
