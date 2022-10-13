@@ -119,15 +119,33 @@ From the 4 strings added in the previous code, when searching for "jack" you get
 
 ## Part 2: Testing for Bugs
 
-First Bug- Arrays
+First Bug- ArrayExamples.reversed
 
 Failure Inducing Input: 
+```
+@Test
+  public void testReversedLength2() {
+    int[] input1 = {1, 2};
+    assertArrayEquals(new int[]{2, 1}, ArrayExamples.reversed(input1));
+  }
+```
+An input of two integers should return those two integers in opposite places
 
 Symptom:
 
+![ArraysErrorOutput](https://user-images.githubusercontent.com/70072541/195723419-cdb5d74f-87e1-41c0-844e-d60d646f4113.png)
+
+The first number was 0 instead of the reversed number
+
 Bug:
 
+![ArraysErrorOutput](https://user-images.githubusercontent.com/70072541/195724666-fd1e9bde-4542-4199-bd1d-b8b688219357.png)
+
+By setting the values of the new array to the reversed values, and returning the new array, the bug is fixed and the test passes
+
 Connection:
+The first number was 0 due to the fact that the the new array was being reversed and inserted into the input array. The new array was a list of 0s so reversing them changed nothing, and the input array was changed to all 0s. By rearranging the variables so the input was reversed and the list of 0s were replaced, the problem was solved
+
 
 Second Bug- Lists
 
