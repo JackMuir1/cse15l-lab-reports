@@ -81,6 +81,8 @@ String[] parameters = url.getQuery().split("=");
 The program splits the queries between = and puts them into a list, then adds all the items from the list into the strings dataset. It also concatinates them into a string to be outputted by the program.
 
 This means that you can add as many strings you want to the data set in one address line. Below is an example of adding one string and three strings as queries
+
+
 ![adding jack](https://user-images.githubusercontent.com/70072541/195721331-d8546b09-b49d-437e-a7d1-98a031cdd646.png)
 ![adding_2names](https://user-images.githubusercontent.com/70072541/195721403-a2ae7048-e419-4a35-927c-078f05ae6137.png)
 
@@ -111,6 +113,7 @@ String[] parameters = url.getQuery().split("=");
 The code takes the first querry after the = , then loops through all the strings in the data set and checks to see if the querry is a substring of any of the elements in the dataset. If the querry is a substring, then the string is added to the output of the program.
 
 From the 4 strings added in the previous code, when searching for "jack" you get two results, seen below:
+
 ![searching_jack](https://user-images.githubusercontent.com/70072541/195722142-5062b603-850a-4615-94f6-0b240317336e.png)
 
 
