@@ -7,12 +7,10 @@ The -newer option outputs files that were created or modified after the file to 
 
 ### Example 1
 
-`
+```
 Owner@DESKTOP-VPMBE6R MINGW64 ~/Desktop/CSE 15L/docsearch/technical (main)
 $ find . -newer ./911report/chapter-1.txt
-`
 
-`
 .
 ./911report
 ./911report/chapter-10.txt
@@ -36,7 +34,7 @@ $ find . -newer ./911report/chapter-1.txt
 ./biomed/1468-6708-3-10.txt
 ./biomed/1468-6708-3-3.txt
 ...EVERY SINGLE FILE LISTED
-`
+```
 
 When finding for newer files created after `./911report/chapter-1.txt`, we can see that every single directory and file is listed. This shows that `./911report/chapter-1.txt`is the oldest file in the directory
 
