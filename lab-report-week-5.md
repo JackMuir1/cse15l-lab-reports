@@ -105,10 +105,10 @@ $ find . -empty
 We create a second empty directory in the `government/Media` and run the search again. We see that it finds the empty file both in the working directory and recursively when searched from a parent directory.
 
 ## Third Option: -user
-The -v option will output all the lines that do **not** match
+The -user option will output all the files that owned by the user specified after the option
 
 ### Example 1
-`
+```
 Owner@DESKTOP-VPMBE6R MINGW64 ~/Desktop/CSE 15L/docsearch/technical (main)
 $ find . -user Owner
 .
@@ -134,7 +134,7 @@ $ find . -user Owner
 ./biomed/1468-6708-3-1.txt
 ./biomed/1468-6708-3-10.txt
 ...ALL FILES LISTED
-`
+```
 My username on my computer is Owner (never bothered to change it to my name).  When searching for files under the username Owner, we can see that all the files are outputted, showing that every files is owned by my machine. 
 
 ### Example 2
@@ -146,7 +146,7 @@ find: ‘JackMuir’ is not the name of a known user
 We can see that I am too lazy to change my username on my computer because my name is not a known user. On a computer with multiple users, one could search for files owned by any user.
 
 ### Example 3
-`
+```
 Owner@DESKTOP-VPMBE6R MINGW64 ~/Desktop/CSE 15L/docsearch/technical (main)
 $ ssh cs15lfa22ka@ieng6.ucsd.edu
 Last login: Thu Oct 27 11:21:57 2022 from 100.81.33.235
@@ -182,5 +182,5 @@ find: 'Owner' is not the name of a known user
 ./docsearch/technical/911report/chapter-12.txt
 ./docsearch/technical/911report/chapter-13.1.txt
 ... ALL FILES LISTED
-`
+```
 Here I logged into the remote computer to test the repository with a different owner. I cloned the repository into the remote computer, and searched for the files owned by by local machine. Nothing returned, as I was on the remote computer, but when finding files owned by my cs15lfa22ka username, the files in `/technical` returned.
