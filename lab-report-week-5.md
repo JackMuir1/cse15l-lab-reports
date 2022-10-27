@@ -10,9 +10,10 @@ The -newer option outputs files that were created or modified after the file to 
 `
 Owner@DESKTOP-VPMBE6R MINGW64 ~/Desktop/CSE 15L/docsearch/technical (main)
 $ find . -newer ./911report/chapter-1.txt
-.`
+`
 
 `
+.
 ./911report
 ./911report/chapter-10.txt
 ./911report/chapter-11.txt
