@@ -104,23 +104,83 @@ $ find . -empty
 ```
 We create a second empty directory in the `government/Media` and run the search again. We see that it finds the empty file both in the working directory and recursively when searched from a parent directory.
 
-## Third Option: -v
+## Third Option: -user
 The -v option will output all the lines that do **not** match
 
 ### Example 1
 `
-
+Owner@DESKTOP-VPMBE6R MINGW64 ~/Desktop/CSE 15L/docsearch/technical (main)
+$ find . -user Owner
+.
+./911report
+./911report/chapter-1.txt
+./911report/chapter-10.txt
+./911report/chapter-11.txt
+./911report/chapter-12.txt
+./911report/chapter-13.1.txt
+./911report/chapter-13.2.txt
+./911report/chapter-13.3.txt
+./911report/chapter-13.4.txt
+./911report/chapter-13.5.txt
+./911report/chapter-2.txt
+./911report/chapter-3.txt
+./911report/chapter-5.txt
+./911report/chapter-6.txt
+./911report/chapter-7.txt
+./911report/chapter-8.txt
+./911report/chapter-9.txt
+./911report/preface.txt
+./biomed
+./biomed/1468-6708-3-1.txt
+./biomed/1468-6708-3-10.txt
+...ALL FILES LISTED
 `
-Sentance
+My username on my computer is Owner (never bothered to change it to my name).  When searching for files under the username Owner, we can see that all the files are outputted, showing that every files is owned by my machine. 
 
 ### Example 2
-`
-
-`
-Sentance
+```
+Owner@DESKTOP-VPMBE6R MINGW64 ~/Desktop/CSE 15L/docsearch/technical (main)
+$ find . -user JackMuir
+find: ‘JackMuir’ is not the name of a known user
+```
+We can see that I am too lazy to change my username on my computer because my name is not a known user. On a computer with multiple users, one could search for files owned by any user.
 
 ### Example 3
 `
+Owner@DESKTOP-VPMBE6R MINGW64 ~/Desktop/CSE 15L/docsearch/technical (main)
+$ ssh cs15lfa22ka@ieng6.ucsd.edu
+Last login: Thu Oct 27 11:21:57 2022 from 100.81.33.235
+Hello cs15lfa22ka, you are currently logged into ieng6-203.ucsd.edu
 
+You are using 0% CPU on this system
+
+Cluster Status
+Hostname     Time    #Users  Load  Averages
+ieng6-201   13:45:01   13  0.34,  0.24,  0.23
+ieng6-202   13:45:01   27  0.14,  0.19,  0.17
+ieng6-203   13:45:01   17  1.24,  1.22,  1.23
+
+
+Thu Oct 27, 2022  1:46pm - Prepping cs15lfa22
+[cs15lfa22ka@ieng6-203]:~:82$ git clone https://github.com/ucsd-cse15l-f22/docsearch.git
+Cloning into 'docsearch'...
+remote: Enumerating objects: 1451, done.
+remote: Counting objects: 100% (38/38), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 1451 (delta 25), reused 23 (delta 16), pack-reused 1413
+Receiving objects: 100% (1451/1451), 12.21 MiB | 13.21 MiB/s, done.
+Resolving deltas: 100% (26/26), done.
+Updating files: 100% (1399/1399), done.
+[cs15lfa22ka@ieng6-203]:~:83$ find ./docsearch/technical -user Owner
+find: 'Owner' is not the name of a known user
+[cs15lfa22ka@ieng6-203]:~:84$ find ./docsearch/technical -user cs15lfa22ka
+./docsearch/technical
+./docsearch/technical/911report
+./docsearch/technical/911report/chapter-1.txt
+./docsearch/technical/911report/chapter-10.txt
+./docsearch/technical/911report/chapter-11.txt
+./docsearch/technical/911report/chapter-12.txt
+./docsearch/technical/911report/chapter-13.1.txt
+... ALL FILES LISTED
 `
-Sentance
+Here I logged into the remote computer to test the repository with a different owner. I cloned the repository into the remote computer, and searched for the files owned by by local machine. Nothing returned, as I was on the remote computer, but when finding files owned by my cs15lfa22ka username, the files in `/technical` returned.
