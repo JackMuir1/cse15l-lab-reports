@@ -10,7 +10,6 @@ The -newer option outputs files that were created or modified after the file to 
 ```
 Owner@DESKTOP-VPMBE6R MINGW64 ~/Desktop/CSE 15L/docsearch/technical (main)
 $ find . -newer ./911report/chapter-1.txt
-
 .
 ./911report
 ./911report/chapter-10.txt
@@ -39,30 +38,25 @@ $ find . -newer ./911report/chapter-1.txt
 When finding for newer files created after `./911report/chapter-1.txt`, we can see that every single directory and file is listed. This shows that `./911report/chapter-1.txt`is the oldest file in the directory
 
 ### Example 2
-`
+```
 Owner@DESKTOP-VPMBE6R MINGW64 ~/Desktop/CSE 15L/docsearch/technical (main)
 $ find . -newer ./plos/pmed.0020278.txt
-`
-
-`
 ./plos
 ./plos/pmed.0020281.txt
+```
 
-`
 When finding for newer files created after `./plos/pmed.0020278.txt`, we can see that only the `./plos` directory and `./plos/pmed.0020281.txt` are listed. This shows that `./plos/pmed.0020278.txt`is the second newest file in the directory, with `./plos/pmed.0020281.txt` being the newest.
 
 ### Example 3
-`
+```
 Owner@DESKTOP-VPMBE6R MINGW64 ~/Desktop/CSE 15L/docsearch/technical (main)
 $ find ./government/Alcohol_Problems -newer ./government/Alcohol_Problems/DraftRecom-PDF.txt
-`
-
-`
 ./government/Alcohol_Problems
 ./government/Alcohol_Problems/Session2-PDF.txt
 ./government/Alcohol_Problems/Session3-PDF.txt
 ./government/Alcohol_Problems/Session4-PDF.txt
-`
+```
+
 By finding in the `./government/Alcohol_Problems` directory specifically, we see that `./government/Alcohol_Problems/DraftRecom-PDF.txt` is the oldest file, because every file is listed after the find command.
 
 ## Second Option: -c
