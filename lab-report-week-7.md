@@ -38,10 +38,10 @@ Time to complete- 1:41
 Time to complete- 0:58
 
 ### Questions
-Which of these two styles would you prefer using if you had to work on a program that you were running remotely, and why?
+* Which of these two styles would you prefer using if you had to work on a program that you were running remotely, and why? *
 
 I prefer to log in to the remote server using ssh. When editing a file, especially with Vim, it is simpler to work with the files in their intended location, instead of moving them after every edit.
 
-What about the project or task might factor into your decision one way or another? (If nothing would affect your decision, say so and why!)
+* What about the project or task might factor into your decision one way or another? (If nothing would affect your decision, say so and why!) *
 
 Being that I simplified the task is a proceedural set of commands, I made less mistakes and did not need to memorize all the commands. In a real world scenario such as a job, I will have to edit files and create solutions on the fly, which would require me to know the commands and navigate the file systems of the given scenario. This would change my preference of remote editing.
