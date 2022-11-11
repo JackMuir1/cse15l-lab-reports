@@ -5,7 +5,7 @@ The task my group chose to optimize with vim commands was the following:
 In DocSearchServer.java, add a new line right before File[] paths = f.listFiles(); that prints out the toString of f and a message saying it’s a directory.
 
 ## Part 1- Commands
-` /if < Enter > `
+` /if <Enter> `
 
 ![first cmd](https://user-images.githubusercontent.com/70072541/201260888-4b60cfc1-cbbb-47ba-a951-af67d7beede4.png)
 
