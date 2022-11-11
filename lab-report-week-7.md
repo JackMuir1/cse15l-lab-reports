@@ -33,9 +33,11 @@ In DocSearchServer.java, add a new line right before File[] paths = f.listFiles(
 
 ### Method 1- Send the file to the remote server using scp
 Time to complete- 1:41
+* Logging in and waiting to upload took time, along with logging in to the server after sending the file
 
 ### Method 2- Log in and edit remotely
 Time to complete- 0:58
+* Only having to log in once increased efficiency
 
 ### Questions
 **Which of these two styles would you prefer using if you had to work on a program that you were running remotely, and why?**
