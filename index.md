@@ -9,4 +9,6 @@
 
 [Week 5 Lab Report](lab-report-week-5.md)
 
+[Week 7 Lab Report](lab-report-week-7.md)
+
 [Markdown Demo](https://jackmuir1.github.io/cse15l-lab-reports/Markdown-Demo.html)
