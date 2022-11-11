@@ -3,7 +3,7 @@
 In this lab report, we will be exploring 3 command line options for the **find** command through some examples in `./technical`
 
 ## First Option: -newer
-The -newer option outputs files that were created or modified after the file to find
+The -newer option outputs files that were created or modified after the file to find. This is important because when navigating a file system, you may want to see what the most recent additions are. For example, if you were to host a competition to see who could write an essay the fastest, you can find the places of the winners based on the order of file additions.
 
 ### Example 1
 
@@ -60,7 +60,7 @@ $ find ./government/Alcohol_Problems -newer ./government/Alcohol_Problems/DraftR
 By finding in the `./government/Alcohol_Problems` directory specifically, we see that `./government/Alcohol_Problems/DraftRecom-PDF.txt` is the oldest file, because every file is listed after the find command.
 
 ## Second Option: -empty
-The -empty option will output the any files or directories that are empty
+The -empty option will output the any files or directories that are empty. This is useful when looking for unused directories in a large file system. This helps with organization of file systems.
 
 
 ### Example 1
@@ -105,7 +105,7 @@ $ find . -empty
 We create a second empty directory in the `government/Media` and run the search again. We see that it finds the empty file both in the working directory and recursively when searched from a parent directory.
 
 ## Third Option: -user
-The -user option will output all the files that owned by the user specified after the option
+The -user option will output all the files that owned by the user specified after the option. This is important when you have a file system with a lot of contributors. For example, you could find all the files you created in a group project, so you can weigh your contribution.
 
 ### Example 1
 ```
