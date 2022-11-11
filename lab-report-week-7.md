@@ -4,7 +4,7 @@ The task my group chose to optimize with vim commands was the following:
 
 In DocSearchServer.java, add a new line right before File[] paths = f.listFiles(); that prints out the toString of f and a message saying it’s a directory.
 
-## Commands
+## Part 1- Commands
 ` /if <Enter> `
 
 ![first cmd](https://user-images.githubusercontent.com/70072541/201260888-4b60cfc1-cbbb-47ba-a951-af67d7beede4.png)
@@ -27,3 +27,17 @@ In DocSearchServer.java, add a new line right before File[] paths = f.listFiles(
 
 
 ![exited-vim](https://user-images.githubusercontent.com/70072541/201260855-c06226b5-f810-47fb-a7ae-62b3eed8ea12.png)
+
+
+## Part 2- Running Remotely
+
+### Method 1- Send the file to the remote server using scp
+Time to complete- 1:41
+
+### Method 2- Log in and edit remotely
+Time to complete- 
+
+### Questions
+Which of these two styles would you prefer using if you had to work on a program that you were running remotely, and why?
+
+What about the project or task might factor into your decision one way or another? (If nothing would affect your decision, say so and why!)
