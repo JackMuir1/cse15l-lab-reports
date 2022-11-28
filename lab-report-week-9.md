@@ -56,8 +56,8 @@ fi
 
 ## Trace of grade.sh
 I will be using **Submission 1** for my trace. I will be going line by line, with each line number explained below:
-1. 
-2.
+1.  dog
+2. cat
 3.
 4.
 5.
