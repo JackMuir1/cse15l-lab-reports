@@ -97,13 +97,13 @@ Stderr: nothing Exit Code: 0
 24. Blank 
 
 
-26. Variable Assignment off of grep- Stdout: empty string Stderr: nothing Exit Code: 1 (grep returned empty string, no instances of failed tests)
+25. Variable Assignment off of grep- Stdout: empty string Stderr: nothing Exit Code: 1 (grep returned empty string, no instances of failed tests)
 
 
-28. echo- Stdout: empty string Stderr: nothing Exit Code: 0
+26. echo- Stdout: empty string Stderr: nothing Exit Code: 0
 
 
-30. Blank
+27. Blank
 
 
 32. If Statement- checks if reult variable is empty- returns true, as grep returned no lines to store in result
