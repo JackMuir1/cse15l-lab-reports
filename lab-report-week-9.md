@@ -63,6 +63,7 @@ The code compiled but did not pass all the tests, so the code displays the numbe
 
 ## Trace of grade.sh
 I will be using **Submission 1- Perfect Run** for my trace. I will be going line by line, with each line number explained below:
+
 1 Comment, no effect on program
 
 2 Variable Assign- Stdout: nothing Stderr: nothing Exit Code: 0
