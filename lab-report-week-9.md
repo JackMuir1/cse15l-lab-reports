@@ -92,7 +92,7 @@ Time: 0.013
 
 OK (5 tests) 
 Stderr: nothing Exit Code: 0
-24. Blank
+24. Blank 
 25. Variable Assignment off of grep- Stdout: empty string Stderr: nothing Exit Code: 1 (grep returned empty string, no instances of failed tests)
 26. echo- Stdout: empty string Stderr: nothing Exit Code: 0
 27. Blank
