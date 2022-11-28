@@ -86,12 +86,14 @@ I will be using **Submission 1- Perfect Run** for my trace. I will be going line
 21. Does not run- if statement does not reach the branch with this line in this run
 22. fi- applies to if statement
 23. java- Stdout: 
+```
 JUnit version 4.13.2
 .....
 Time: 0.013
 
 OK (5 tests) 
 Stderr: nothing Exit Code: 0
+```
 24. Blank 
 
 
