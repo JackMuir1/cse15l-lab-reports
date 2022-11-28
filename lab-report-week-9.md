@@ -93,21 +93,29 @@ Time: 0.013
 OK (5 tests) 
 Stderr: nothing Exit Code: 0
 24. Blank 
-25. Variable Assignment off of grep- Stdout: empty string Stderr: nothing Exit Code: 1 (grep returned empty string, no instances of failed tests)
-26. echo- Stdout: empty string Stderr: nothing Exit Code: 0
-27. Blank
-28. If Statement- checks if reult variable is empty- returns true, as grep returned no lines to store in result
-29. then- apllies to if statement
-30. echo- Stdout: You passed all the tests! Stderr: nothing Exit Code: 0
-31. echo- Stdout: 100 Points Stderr: nothing Exit Code: 0
-32. exit 1- Stdout: nothing Stderr: nothing Exit Code: 1
-33. else- applies to if statement
-34. Does not run- if statement does not reach the branch with this line in this run
-35. Does not run- if statement does not reach the branch with this line in this run
-36. fi- applies to if statement
-37. Blank
-38. else- applies to if statement
+
+
+26. Variable Assignment off of grep- Stdout: empty string Stderr: nothing Exit Code: 1 (grep returned empty string, no instances of failed tests)
+
+
+28. echo- Stdout: empty string Stderr: nothing Exit Code: 0
+
+
+30. Blank
+
+
+32. If Statement- checks if reult variable is empty- returns true, as grep returned no lines to store in result
+33. then- apllies to if statement
+34. echo- Stdout: You passed all the tests! Stderr: nothing Exit Code: 0
+35. echo- Stdout: 100 Points Stderr: nothing Exit Code: 0
+36. exit 1- Stdout: nothing Stderr: nothing Exit Code: 1
+37. else- applies to if statement
+38. Does not run- if statement does not reach the branch with this line in this run
 39. Does not run- if statement does not reach the branch with this line in this run
-40. Does not run- if statement does not reach the branch with this line in this run
-41. Does not run- if statement does not reach the branch with this line in this run
-42. fi- applies to if statement
+40. fi- applies to if statement
+41. Blank
+42. else- applies to if statement
+43. Does not run- if statement does not reach the branch with this line in this run
+44. Does not run- if statement does not reach the branch with this line in this run
+45. Does not run- if statement does not reach the branch with this line in this run
+46. fi- applies to if statement
