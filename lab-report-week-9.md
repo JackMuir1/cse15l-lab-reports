@@ -49,10 +49,15 @@ fi
 ## Student Submissions
 
 ### Submission 1- 
+![Prompt1](https://user-images.githubusercontent.com/70072541/204251294-bbbf0324-1b9a-4a3e-a80b-51f1d4b92fa1.png)
 
 ### Submission 2- 
+![Prompt2](https://user-images.githubusercontent.com/70072541/204251370-de2f7026-a0be-4452-ad1a-c00b964fd900.png)
+
 
 ### Submission 3- 
+![Prompt3](https://user-images.githubusercontent.com/70072541/204251411-19a84ce2-bf92-4d50-8d1e-c78f7a4146eb.png)
+
 
 ## Trace of grade.sh
 I will be using **Submission 1** for my trace. I will be going line by line, with each line number explained below:
